@@ -181,12 +181,25 @@ def uji_akurasi_page():
         ax.set_ylabel("Nilai")
         st.pyplot(fig)
 
-
-
 def tentang_aplikasi_page():
     st.title("Tentang Aplikasi")
-    
-    
+    st.write("""
+    Selamat datang di **Aplikasi Real Estate Prediction**!  
+
+    Aplikasi ini dirancang untuk membantu Anda memprediksi **harga rumah** berdasarkan berbagai variabel penting, seperti:  
+    - **Luas Tanah**  
+    - **Luas Bangunan**  
+    - **Jumlah Kamar Tidur**  
+    - **Jumlah Kamar Mandi**  
+    - **Keberadaan Garasi**  
+
+    Dengan memanfaatkan teknologi **Machine Learning**, aplikasi ini menggunakan dua algoritma utama:  
+    1. **Multiple Linear Regression**: Cepat dan cocok untuk data dengan pola linier.  
+    2. **Backpropagation Neural Network**: Memberikan prediksi yang lebih kompleks dengan akurasi yang lebih tinggi.  
+
+    Aplikasi **Real Estate Prediction** ini dirancang tidak hanya untuk memberikan hasil prediksi yang akurat, tetapi juga untuk membantu pengguna dalam memahami faktor-faktor yang memengaruhi harga rumah.   
+    """)
+   
 
 def main():
     # Konfigurasi Halaman
@@ -201,7 +214,7 @@ def main():
         selected = option_menu(
             menu_title="Real Estate Prediction",
             options=["Prediksi Harga", "Uji Akurasi", "Tentang Aplikasi"],
-            icons=["calculator", "graph-up", "clock-history"],
+            icons=["calculator", "graph-up", "info-circle"],
             menu_icon="house",
             default_index=0
         )
@@ -211,7 +224,7 @@ def main():
         prediksi_harga_page()
     elif selected == "Uji Akurasi":
         uji_akurasi_page()
-    elif selected == "Riwayat Prediksi":
+    elif selected == "Tentang Aplikasi":
         tentang_aplikasi_page()
 
 # Jalankan Aplikasi
