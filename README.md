@@ -81,13 +81,6 @@ streamlit run forecasting.py
 - MAE (Mean Absolute Error)
 - MAPE (Mean Absolute Percentage Error)
 
-## 🔧 Feature Engineering
-- LT_LB: Interaksi antara Luas Tanah dan Luas Bangunan
-- LT_squared: Kuadrat dari Luas Tanah
-- LB_squared: Kuadrat dari Luas Bangunan
-- LB_LT_ratio: Rasio Luas Bangunan terhadap Luas Tanah
-- Transformasi logaritmik untuk Luas Tanah dan Luas Bangunan
-
 ## 📋 Format Dataset
 File Excel (.xlsx) dengan kolom:
 - LT (Luas Tanah)
